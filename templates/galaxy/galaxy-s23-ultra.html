@@ -1,0 +1,303 @@
+<!-- templates/home/index.html -->
+{% extends "../_base.html" %} {% block content %}
+<nav class="bg-gray-100 fixed w-full z-10 top-0 left-0">
+  <div
+    class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+    <span class="self-center text-2xl font-semibold whitespace-nowrap"
+      >Galaxy S23 Ultra</span
+    >
+
+    <div class="items-center justify-between hidden w-full md:flex w-auto">
+      <ul class="flex flex-col p-4 md:p-0 mt-4 md:flex-row md:space-x-8 mt-0">
+        <li>
+          <span class="block py-2 pr-2 text-gray-500">Overview</span>
+        </li>
+        <li>
+          <a href="#" class="block py-2 pr-2 text-black">Tech Specs</a>
+        </li>
+        <li>
+          <a href="#" class="block py-2 text-black">
+            <div
+              class="rounded-xl bg-blue-600 hover:bg-sky-600 px-4 text-white"
+              id="title-galaxy-s23-ultra-buy">
+              Buy
+            </div></a
+          >
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="block bg-black">
+  <div class="relative w-screen h-fit items-center">
+    <img
+      class="pt-20"
+      src="/static/image/galaxy-s23-ultra/galaxy-s23-ultra.png" />
+    <div
+      class="absolute inset-y-0 my-auto flex flex-col h-fit justify-between items-center p-20 left-20">
+      <div class="mt-40">
+        <div class="text-3xl text-center font-semibold" style="color: #878d81">
+          Galaxy S23 Ultra
+        </div>
+        <div class="mt-2 text-lg text-white">
+          From $1199 or $49.95/mo. for 24 mo.
+        </div>
+        <a href="/shop/"
+          ><div
+            class="mx-28 mt-8 text-lg rounded-xl bg-blue-600 hover:bg-sky-600 px-4 text-white text-center">
+            Buy
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="relative w-full h-fit bg-zinc-900" id="highlights">
+    <div class="w-3/5 mx-auto">
+      <div class="mb-8 pt-60 flex justify-between items-end">
+        <div class="p-4 text-gray-500 text-6xl font-semibold">
+          Get the highlights.
+        </div>
+        <div class="flex flex-row">
+          <div class="p-4 text-blue-500 font-medium">Watch the film ></div>
+          <div class="p-4 text-blue-500 font-medium">Watch the event ></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="mx-auto w-3/5 h-fit pb-32">
+      <div class="w-5/6 h-fit p-14 mx-auto bg-black rounded-xl text-white">
+        <div class="text-2xl font-semibold">
+          World’s fastest <br />
+          Snapdragon
+        </div>
+
+        <img
+          class="mx-auto items-center"
+          src="/static/image/galaxy-s23-ultra/qualcomm-snapdragon-8.png" />
+      </div>
+    </div>
+  </div>
+  <div class="relative w-full h-fit p-16" id="ap">
+    <div
+      class="w-5/6 mx-auto mb-20 text-white text-center text-5xl font-semibold">
+      Power for <br />those who don't pause
+    </div>
+
+    <img
+      class="w-3/5 mx-auto items-center"
+      src="/static/image/galaxy-s23-ultra/galaxy-s23-ultra-highlights-performance-end.webp" />
+
+    <div class="w-3/5 mx-auto mt-10 flex flex-col">
+      <div class="w-3/5 text-gray-500 ml-20 text-lg font-semibold">
+        Game at full throttle and smoothly switch between apps with our
+        <span class="text-white">fastest processor ever.</span>
+      </div>
+      <div
+        class="w-3/4 mt-20 ml-20 text-white flex flex-col text-xs text-gray-700">
+        <div class="mb-4">
+          *Wreckfest available for purchase and download in the Samsung Galaxy
+          Store app. Content is generally suitable for ages 13 and up. May
+          contain violence, suggestive themes, crude humor, minimal blood,
+          simulated gambling and/or infrequent use of strong language. Wreckfest
+          ©2022 THQ Nordic AB, Sweden. Wreckfest is a registered trademark of
+          THQ Nordic AB, Sweden. All rights reserved. All other trademarks,
+          logos, and copyrights are property of their respective owners.
+        </div>
+        <div>
+          *Image simulated for illustrative purposes. Actual UI may be
+          different.
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="relative w-full h-fit p-16 bg-zinc-900" id="camera">
+    <div class="w-3/5 mx-auto mb-20 text-white text-5xl font-semibold">
+      Outstanding specifications that everyone will envy
+      <div class="w-2/3 mt-10 text-gray-500 text-lg font-semibold">
+        Take crisp photos and videos, no matter the lighting. Galaxy's most
+        advanced camera sensor and fastest processor reduce noise in low light
+        for stunning shots.
+      </div>
+    </div>
+    <img
+      class="w-3/5 mx-auto items-center"
+      src="/static/image/galaxy-s23-ultra/galaxy-s23-ultra-highlights-nightography.avif" />
+    <div class="h-screen flex flex-col justify-between mt-20">
+      <div class="w-3/5 mx-auto mt-20 flex flex-row pl-10">
+        <img
+          class="w-3/5 mx-auto items-center"
+          src="/static/image/galaxy-s23-ultra/galaxy-s23-ultra-highlights-nightgraphy-portrait-02.jpg" />
+        <div class="flex flex-col pl-10 justify-center">
+          <div class="text-white text-xl mb-8">NIGHT PORTRAIT</div>
+          <div class="w-3/4 text-gray-500">
+            This camera delivers on depth and dimension. Gently blur the
+            background to put your friends in focus and let incredible details
+            shine.
+          </div>
+        </div>
+      </div>
+      <div class="w-3/5 mx-auto mt-20 flex flex-row pl-10">
+        <div class="flex flex-col pr-10 justify-center">
+          <div class="text-white text-xl mb-8">ASTRO HYPERLAPSE</div>
+          <div class="w-3/4 text-gray-500">
+            Transform a starry sky into a work of art. Turn on Hyperlapse to
+            record timelapses with bright clarity, speeding up minutes of
+            footage into stunning seconds.
+          </div>
+        </div>
+        <img
+          class="w-3/5 mx-auto items-center"
+          src="/static/image/galaxy-s23-ultra/galaxy-s23-ultra-highlights-nightgraphy-astro-end.jpg" />
+      </div>
+    </div>
+    <div
+      class="w-3/5 mx-auto mt-40 mb-20 text-white text-5xl font-semibold text-center">
+      200MP wow-worthy resolution
+    </div>
+    <div class="flex justify-center h-1/2">
+      <img
+        class="w-3/5 mx-auto items-center"
+        src="/static/image/galaxy-s23-ultra/gsmarena_204.jpg" />
+    </div>
+  </div>
+
+  <div class="relative w-full h-screen p-16" id="spen">
+    <div class="w-3/5 mt-40 mx-auto">
+      <div class="w-1/2 mb-20 text-white text-5xl font-semibold">
+        Note's signature tool comes built in
+      </div>
+      <div class="flex flex-row">
+        <div class="w-1/3 text-gray-500 text-lg font-semibold pr-20">
+          S Pen keeps the legacy of Galaxy Note alive. Capture scribbles,
+          strokes of genius and
+          <span class="text-white"
+            >everything in between with the built-in S Pen.</span
+          >
+          You can even use it to snap pics without needing to set a selfie
+          timer.
+        </div>
+        <img
+          class="w-1/2 mx-auto items-center"
+          src="/static/image/galaxy-s23-ultra/galaxy-s23-ultra-highlights-spen.jpg" />
+      </div>
+    </div>
+  </div>
+
+  <div class="relative w-full h-fit p-16 bg-zinc-900" id="battery">
+    <div class="flex flex-col w-3/5 mx-auto">
+      <div class="mb-10 text-center text-white text-5xl font-semibold">
+        Bring on the boss battles
+      </div>
+      <div class="text-gray-500 text-lg text-center font-semibold">
+        This intelligent 5000mAh battery saves power for go time, <br />so you
+        can
+        <span class="text-white">game and stream into the night.</span>
+      </div>
+
+      <img
+        class="w-1/2 mx-auto mb-10"
+        src="/static/image/galaxy-s23-ultra/galaxy-s23-ultra-highlights-battery-s.png" />
+      <div class="flex flex-row text-gray-500 justify-between mx-auto">
+        <div class="w-1/2 flex flex-col text-gray-500 text-lg font-semibold">
+          <div class="mb-10">
+            <div class="mb-4">Up to</div>
+            <div class="text-white text-5xl font-semibold mb-4">20 hrs</div>
+            <div>video playback on <br />Galaxy S23 Ultra</div>
+          </div>
+          <div>
+            <div class="mb-4">Up to</div>
+            <div class="text-white text-5xl font-semibold mb-4">37 mins</div>
+            <div>charge to 80%</div>
+          </div>
+        </div>
+        <div class="ml-10 pt-4 px-10 text-lg">
+          <div class="mb-8">
+            Add a Fast Wireless Charging 2.0 Charger for
+            <span class="text-white"> fast, efficient wireless charging</span>
+          </div>
+          <div class="border-t-2 border-gray-500 mb-8"></div>
+          <div class="">
+            <div class="mb-4">
+              Galaxy S23 Ultra has up to 9 more hours video playback than Galaxy
+              S20 Ultra
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="relative w-full h-fit p-16" id="display">
+    <div class="flex flex-col w-3/5 mx-auto">
+      <div class="mb-10 text-center text-white text-5xl font-semibold">
+        A bright future in sight
+      </div>
+
+      <img
+        class="mx-auto items-center mb-20"
+        src="/static/image/galaxy-s23-ultra/galaxy-s23-ultra-highlights-display.jpg" />
+      <div
+        class="w-1/2 mx-auto text-gray-500 text-lg text-center font-semibold">
+        Dynamic AMOLED 2X delivers clear, colorful details on screen, whether
+        dimmed low or on full brightness.
+        <span class="text-white">120Hz technology intelligently optimizes</span>
+        the refresh rate to smooth out action and save on battery.
+      </div>
+    </div>
+  </div>
+
+  <div class="relative w-full h-fit p-16" id="other">
+    <div class="w-3/5 h-fit mb-28 bg-zinc-900 mx-auto py-20" id="oneui">
+      <div class="flex flex-col w-3/5 mx-auto">
+        <div class="mb-20 text-white text-5xl font-semibold">
+          Your Galaxy, the way you like it
+        </div>
+
+        <img
+          class="mx-auto items-center mb-20"
+          src="/static/image/galaxy-s23-ultra/galaxy-s23-ultra-highlights-one-ui.png" />
+        <div class="text-gray-500 text-lg font-semibold">
+          Now it's easier than ever to set your phone up just for you. One UI
+          maximizes customization, allowing you to pick almost every detail,
+          including video lockscreens and custom widgets.
+        </div>
+      </div>
+    </div>
+    <div class="w-3/5 h-fit mb-28 bg-zinc-900 mx-auto py-20" id="pcContinuity">
+      <div class="flex flex-col w-3/5 mx-auto">
+        <div class="mb-20 text-white text-5xl font-semibold">
+          Multi Control makes multitasking easier
+        </div>
+
+        <img
+          class="mx-auto items-center mb-20"
+          src="/static/image/galaxy-s23-ultra/galaxy-s23-ultra-highlights-pc-continuity.png" />
+        <div class="text-gray-500 text-lg font-semibold">
+          When the ideas are flowing, sync your phone and PC for a 2-for-1
+          experience. Without switching your mouse, keyboard or touchpad, you
+          can drag and drop, copy and paste and type on both devices for your
+          most efficient screentime yet.
+        </div>
+      </div>
+    </div>
+    <div class="w-3/5 h-fit mb-28 bg-zinc-900 mx-auto py-20" id="environment">
+      <div class="flex flex-col w-3/5 mx-auto">
+        <div class="mb-20 text-white text-5xl font-semibold">
+          Designed with our planet in mind
+        </div>
+
+        <img
+          class="w-full mx-auto items-center mb-20"
+          src="/static/image/galaxy-s23-ultra/galaxy-s23-ultra-env.jpeg" />
+
+        <div class="text-gray-500 text-lg font-semibold">
+          Crafted in part with recycled glass and ocean-bound plastic, each
+          phone comes in a recycled paper box.
+        </div>
+      </div>
+    </div>
+  </div>
+  {% endblock content %}
+</div>

@@ -1,0 +1,32 @@
+<!-- templates/home/index.html -->
+{% extends "../_base.html" %} {% block content %}
+<style>
+  #galaxy-s23-ultra,
+  #galaxy-s23-plus,
+  #galaxy-s23 {
+    display: none;
+  }
+</style>
+
+<script>
+  function getCurrentURL() {
+    return window.location.pathname;
+  }
+  function showDivBasedOnURL() {
+    var currentURL = getCurrentURL();
+    if (currentURL === "/galaxy/s23-ultra/") {
+      document.getElementById("galaxy-s23-ultra").style.display = "block";
+    } else if (currentURL === "/galaxy/s23-plus/") {
+      document.getElementById("galaxy-s23-plus").style.display = "block";
+    } else if (currentURL === "/galaxy/s23/") {
+      document.getElementById("s23").style.display = "block";
+    }
+  }
+  window.onload = showDivBasedOnURL;
+</script>
+
+<div></div>
+<div class="" id="galaxy-s23-ultra">test galaxy s23 ultra</div>
+<div class="" id="galaxy-s23-plus">test galaxy s23 plus</div>
+<div class="" id="galaxy-s23">test galaxy s23</div>
+{% endblock content %}

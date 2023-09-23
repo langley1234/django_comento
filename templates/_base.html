@@ -1,0 +1,37 @@
+<!-- templates/_base.html -->
+{% load static tailwind_tags %} {% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    {% tailwind_css %}
+
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GALAXY</title>
+    <link rel="stylesheet" href="{% static 'css/output.css' %}" />
+  </head>
+  <body class="w-full h-full">
+    {% block content %} {% endblock content %}
+
+    <div></div>
+
+    <div class="h-fit bg-zinc-900 text-gray-500 p-16">
+      <div class="ml-20">
+        <div class="mb-4">
+          *All images provided on this page are Samsung Electronics images
+          unless otherwise noted. All rights to the images belong to Samsung
+          Electronics.
+        </div>
+        <div class="mb-4">
+          *Snapdragon is a product of Qualcomm Technologies, Inc. and/or its
+          subsidiaries.
+        </div>
+        <div class="mb-4">
+          *Snapdragon is a trademark or registered trademark of Qualcomm
+          Incorporated.
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
