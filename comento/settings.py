@@ -39,11 +39,18 @@ INSTALLED_APPS = [
     "django.contrib.staticfiles",
     "tailwind",
     "django_browser_reload",
+    "accounts.apps.AccountsConfig",
     "theme",
     "home",
     "galaxy",
     "shop",
+    "mysite",
+    "pages",
 ]
+
+LOGIN_REDIRECT_URL = "/"
+LOGOUT_REDIRECT_URL = "/"
+
 TAILWIND_APP_NAME = "theme"
 
 MIDDLEWARE = [

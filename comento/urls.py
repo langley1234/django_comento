@@ -24,5 +24,8 @@ urlpatterns = [
     path("", include("home.urls")),
     path("galaxy/", include("galaxy.urls")),
     path("shop/", include("shop.urls")),
+    path("accounts/", include("accounts.urls")),
+    path("mysite/", include("mysite.urls")),
+    path("pages/", include("pages.urls")),
 ]
 urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
