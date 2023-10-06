@@ -1,0 +1,17 @@
+{% extends "../_base.html" %} {% block content %}
+
+<h1>mysite</h1>
+{% if content_list %} {% for content in content_list %}
+<hr />
+<h3><a href="/mysite/{{ content.id }}/">{{ content.title }}</a></h3>
+<a
+  class="btn btn-primary"
+  href="
+{% url 'detail' content.id %}
+"
+  >상품 상세보기</a
+>
+<h5>{{ content.content}}</h5>
+{% endfor %} {% else %}
+<p>content 가 없습니다.</p>
+{% endif %} {% endblock content %}

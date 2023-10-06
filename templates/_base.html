@@ -10,14 +10,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>GALAXY</title>
     <link rel="stylesheet" href="{% static 'css/output.css' %}" />
+    <nav class="bg-zinc-900 mb-10 p-4 text-white">
+      <ul class="flex justify-end p-4">
+        <li class="mr-4"><a class="nav-link" href="/">Home</a></li>
+        <li class="mr-4">
+          <a class="nav-link" href="/pages/company/">Company Info</a>
+        </li>
+        <li class="mr-4">
+          <a class="nav-link" href="/mysite/">Product</a>
+        </li>
+        {% if user.is_authenticated %}
+        <li class="mr-4">
+          <a
+            class="nav-link"
+            href="{% url
+      'accounts:logout' %}"
+            >{{ user.username }} (logout)</a
+          >
+        </li>
+        {% else %}
+        <li class="mr-4">
+          <a class="nav-link" href="{% url 'accounts:login' %}">login</a>
+        </li>
+        {% endif %}
+      </ul>
+    </nav>
   </head>
   <body class="w-full h-full">
     {% block content %} {% endblock content %}
 
     <div></div>
 
-    <div class="h-fit bg-zinc-900 text-gray-500 p-16">
-      <div class="ml-20">
+    <div class="h-fit bg-zinc-900 text-gray-500 p-10 mt-10">
+      <div class="ml-10">
         <div class="mb-4">
           *All images provided on this page are Samsung Electronics images
           unless otherwise noted. All rights to the images belong to Samsung
